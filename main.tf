@@ -40,11 +40,11 @@ resource "aws_iam_policy" "thumbnail_s3_policy" {
       "Effect" : "Allow",
       "Action" : "s3:PutObject",
       "Resource" : "arn:aws:s3:::thumbnail-image-bucket-hg01/*"
-    }, {
+      }, {
       "Effect" : "Allow",
       "Action" : "s3:ListBucket",
       "Resource" : "*"
-      }]
+    }]
   })
 }
 
