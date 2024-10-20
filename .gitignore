@@ -1,0 +1,40 @@
+# Ignore cache python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Backup state files
+*.tfstate.backup
+
+# Crash log files
+crash.log
+
+# Exclude override files as they are usually used to override resources locally.
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform lock file
+.terraform.lock.hcl
+
+# Ignore any .terraform directory created in the root working directory
+.terraform/
+
+# Terraform plan files
+*.tfplan
+
+# Ignore tfvars files that may contain sensitive information
+*.tfvars
+*.auto.tfvars
+
+# Ignore .env files that may contain sensitive information
+.env
+
+# Ignore backup files created by editors or system
+*.bak
+*.swp
