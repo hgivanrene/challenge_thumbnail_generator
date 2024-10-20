@@ -38,3 +38,6 @@ override.tf.json
 # Ignore backup files created by editors or system
 *.bak
 *.swp
+
+# Ignore all .zip files
+*.zip
