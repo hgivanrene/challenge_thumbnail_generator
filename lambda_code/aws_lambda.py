@@ -7,9 +7,9 @@ import os
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-def lambda_function(event):
-    # Register the event content
+def lambda_function(event, context):
     logger.info(f"event: {event}")
+    logger.info(f"context: {context}")
 
     # Extract the bucket name and the key from the notificacion file of the S3 event
     bucket = event["Records"][0]["s3"]["bucket"]["name"]
