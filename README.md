@@ -10,19 +10,19 @@ Use AWS Lambda function written in Python.
 AWS CloudWatch monitoring and logs.
 
 # Components:
-AWS S3 Bucket: Stores original images and generated thumbnails.
-AWS Lambda Function: Responsible for generating thumbnails upon image upload events.
-AWS CloudWatch Logs: Logs events and errors for monitoring and troubleshooting.
-Terraform Configuration: Infrastructure-as-Code (IaC) using Terraform to provision and manage AWS resources.
+1. AWS S3 Bucket: Stores original images and generated thumbnails.
+2. AWS Lambda Function: Responsible for generating thumbnails upon image upload events.
+3. AWS CloudWatch Logs: Logs events and errors for monitoring and troubleshooting.
+4. Terraform Configuration: Infrastructure-as-Code (IaC) using Terraform to provision and manage AWS resources.
 
 # Dependencies:
-Terraform
-AWS CLI
-Python (for custom Lambda function)
+1. Terraform
+2. AWS CLI
+3. Python (for custom Lambda function)
 
 # Repo clonning
-git clone git@github.com:hgivanrene/challenge_thumbnail_generator.git # This command is when you have your ssh key configured in the repo. This option is quite safer.
-git clone gh repo clone hgivanrene/challenge_thumbnail_generator # This option is to clone the repo using the web URL.
+* git clone git@github.com:hgivanrene/challenge_thumbnail_generator.git # This command is when you have your ssh key configured in the repo. This option is quite safer.
+* git clone gh repo clone hgivanrene/challenge_thumbnail_generator # This option is to clone the repo using the web URL.
 
 # Install Terraform for MAC
     - Install Terraform with Homebrew (brew install terraform)
@@ -39,6 +39,7 @@ git clone gh repo clone hgivanrene/challenge_thumbnail_generator # This option i
 
 # Usage:
 Deploy the infrastructure using Terraform.
+
     Init your work directory
     - terraform init
 
