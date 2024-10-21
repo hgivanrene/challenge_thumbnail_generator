@@ -1,6 +1,9 @@
 # challenge_thumbnail_generator
 This repository is for developing the coding challenge to create a thumbnail generator
 
+# Thumbnail generator architecture
+We upload an image to a source S3 Bucket (input-image-bucket-hg01). Once this image is uploaded the event will send a notification to activate the lambda function that will have an IAM role assigned to access to the S3 buckets (Source and Target). The lambda function is going to make the transformation from the input image and is going to save the thumbnail image in the target S3 Bucket (thumbnail-image-bucket-hg01). All of this architecture, resources and permissions have been created and deployed with Terraform.
+
 ![Image of the architecture](Thumbnail_generator_architecture.jpg)
 
 # Objective:
