@@ -1,6 +1,8 @@
 # challenge_thumbnail_generator
 This repository is for developing the coding challenge to create a thumbnail generator
 
+image.png
+
 # Objective:
 The Thumbnail Generator project aims to automate the generation of thumbnails for images uploaded to an AWS S3 bucket. It uses AWS Lambda function triggered by S3 events to create thumbnails for images stored in the designated bucket.
 
